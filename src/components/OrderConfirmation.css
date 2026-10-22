@@ -1,0 +1,123 @@
+
+.order-confirmation-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 12000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  box-sizing: border-box;
+  background: rgba(20, 0, 0, 0.82);
+  overflow-y: auto;
+}
+
+.order-confirmation-card {
+  width: 100%;
+  max-width: 480px;
+  padding: 32px;
+  box-sizing: border-box;
+  border: 2px solid #e8b45c;
+  border-radius: 20px;
+  background: #fffaf3;
+  color: #351010;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.order-success-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: #e1f4d8;
+  color: #286b2b;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.order-confirmation-eyebrow {
+  color: #a04b18;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.order-confirmation-card h2 {
+  color: #6a1010;
+  font-size: 27px;
+}
+
+.order-confirmation-message {
+  color: #655454;
+  line-height: 1.6;
+}
+
+.order-number-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 24px 0;
+  padding: 20px 12px;
+  border: 1px dashed #c48b42;
+  border-radius: 12px;
+  background: #fff1d4;
+}
+
+.order-number-box span,
+.order-confirmation-details span {
+  color: #725f50;
+  font-size: 13px;
+}
+
+.order-number-box strong {
+  color: #6a1010;
+  font-size: 28px;
+  overflow-wrap: anywhere;
+}
+
+.order-confirmation-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.order-confirmation-details div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.order-continue-button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #e85d04;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.order-continue-button:hover {
+  background: #c94d00;
+}
+
+@media (max-width: 480px) {
+  .order-confirmation-card {
+    padding: 24px 18px;
+  }
+
+  .order-confirmation-card h2 {
+    font-size: 23px;
+  }
+
+  .order-number-box strong {
+    font-size: 24px;
+  }
+}
